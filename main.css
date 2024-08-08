@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  color: #D4C17F;
+}
+
+body {
+  background: #242B33;
+}
+
+.none {
+  display: none !important;
+}
+
+input {
+  width: 255px;
+  height: 50px;
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  width: 255px;
+  height: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./img/header/header-bg.jpg");
+  width: 100%;
+  height: 100%;
+  min-width: 840px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 55px;
+  padding-bottom: 225px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  letter-spacing: 0.05em;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  text-align: center;
+  padding-bottom: 81px;
+}
+
+.heater-scroll {
+  padding-bottom: 200px;
+}
+
+.header-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 98px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 794px;
+  min-height: 180px;
+  padding: 120px 0;
+  gap: 153px;
+}
+.advantages::before {
+  content: "II";
+  right: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.02;
+  line-height: 1.15;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  text-align: center;
+}
+
+.advantages-text {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
+.advantage {
+  transition: all 0.3s ease-in;
+}
+.advantage:hover {
+  transform: scale(1.1);
+}
+
+.apartments {
+  position: relative;
+}
+
+.apartments__title {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  margin-bottom: 88px;
+}
+
+.apartments__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.apartments-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+.apartments-container--sm {
+  max-width: 840px;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  color: #FFFFFF;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.card::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: 7;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(255, 255, 255, 0.4);
+  transition: opacity 0.2s ease-in;
+}
+.card:hover {
+  color: #FFFFFF;
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+.card__img {
+  position: relative;
+  z-index: 5;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover .card__img {
+  transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
+.card__title {
+  position: absolute;
+  z-index: 9;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
+  font-size: 24px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #c4c4c4;
+}
+
+.cta-text {
+  position: relative;
+  bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  text-align: left;
+  gap: 17px;
+}
+
+.cta-title {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+}
+
+.cta-paragraf {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
+
+.name {
+  background: rgba(255, 255, 255, 0.212);
+  transition: all 0.3s ease-in;
+}
+.name:hover {
+  border: 3px double rgba(255, 255, 255, 0.212);
+  background: rgba(255, 255, 255, 0.13);
+}
+.name:hover::-moz-placeholder {
+  opacity: 60%;
+  color: #FFFFFF;
+}
+.name:hover::placeholder {
+  opacity: 60%;
+  color: #FFFFFF;
+}
+
+.phone {
+  background: rgba(255, 255, 255, 0.212);
+  transition: all 0.3s ease-in;
+}
+.phone:hover {
+  border: 3px double rgba(255, 255, 255, 0.212);
+  background: rgba(255, 255, 255, 0.13);
+}
+.phone:hover::-moz-placeholder {
+  opacity: 60%;
+  color: #FFFFFF;
+}
+.phone:hover::placeholder {
+  opacity: 60%;
+  color: #FFFFFF;
+}
+
+.btn {
+  color: #FFFFFF;
+  background: #D4C17F;
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  background: #d8bf63;
+}
+
+.warning {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.video {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.video-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+.video-icon:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  filter: contrast(2);
+}
+
+.video-link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.video-link::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  transition: background-color 0.2s ease-in;
+}
+.video-link:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+
+.map-container {
+  padding: 180px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-container-title {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  width: 1100px;
+  margin-bottom: 88px;
+}
+
+.map-secthion {
+  background: #D4C17F;
+  width: 1100px;
+  height: 360px;
+}
+.map-secthion iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.faqs-title {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  width: 1160px;
+}
+
+.faqs-form {
+  display: flex;
+  gap: 30px;
+}
+
+.footer {
+  margin-top: 180px;
+  padding: 60px 405px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #2D343C;
+}
+
+.footer-logo {
+  margin-bottom: -12px;
+}
+
+ul {
+  display: grid;
+  gap: 15px;
+}
+
+.item {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+}
+.item a {
+  color: #D4C17F;
+}
+
+.socthials {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=main.css.map */

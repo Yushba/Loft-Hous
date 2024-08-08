@@ -1,0 +1,32 @@
+.footer {
+    margin-top: 180px;
+    padding: 60px 405px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #2D343C;
+}
+
+.footer-logo {
+    margin-bottom: -12px;
+}
+
+ul {
+    display: grid;
+    gap: 15px;
+}
+
+.item {
+    font-family: $font-main;
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 0.05em;
+    
+    & a {
+        color: $accent;
+    }
+}
+
+.socthials {
+    display: flex;
+    gap: 20px;
+}

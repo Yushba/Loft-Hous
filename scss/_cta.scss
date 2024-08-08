@@ -1,0 +1,93 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+	padding: 180px 0;
+
+	background: linear-gradient(
+			180deg,
+			$dark 10.42%,
+			rgba(36, 43, 51, 0) 50.52%,
+			$dark 90.1%
+		),
+		linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+		url('./../img/cta/cta-bg.jpg'), #c4c4c4;
+
+}
+
+.cta-text {
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    text-align: left;
+    gap: 17px;
+}
+
+.cta-title {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+}
+
+.cta-paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $font-main;
+    color: $white;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+}
+
+.name {
+    background:rgba(255, 255, 255, 0.212);
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        border: 3px double rgba(255, 255, 255, 0.212);
+        background:rgba(255, 255, 255, 0.13);
+
+        &::placeholder {
+            opacity: 60%;
+            color: $white;
+        }
+    }
+}
+
+.phone {
+    background:rgba(255, 255, 255, 0.212);
+    transition: all 0.3s ease-in;
+    
+
+    &:hover {
+        border: 3px double rgba(255, 255, 255, 0.212);
+        background:rgba(255, 255, 255, 0.13);
+
+        &::placeholder {
+            opacity: 60%;
+            color: $white;
+        }
+    }
+}
+
+.btn {
+    color: $white;
+    background: $accent; 
+    transition: all 0.2s ease-in;
+
+     &:hover {
+        background: #d8bf63;
+    }
+}
+
+.warning {
+    color: $white;
+    font-family: $font-main;
+    text-align: center;
+}
