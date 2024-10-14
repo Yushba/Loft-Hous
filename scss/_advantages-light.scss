@@ -27,15 +27,15 @@
 .advantages-text {
     font-weight: 300;
     font-family: $font-secondary;
-    color: $white;
+    color: $dark;
 }
 
 .advantages-img {
-    display: block;
+    display: none;
 }
 
 .advantages-img-light {
-    display: none;
+    display: block;
 }
 
 .advantage {

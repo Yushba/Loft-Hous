@@ -6,12 +6,12 @@
 
 	background: linear-gradient(
 			180deg,
-			$dark 10.42%,
-			rgba(36, 43, 51, 0) 50.52%,
-			$dark 90.1%
+			$white 10.42%,
+			rgba(220, 220, 220, 0) 50.52%,
+			$white 90.1%
 		),
-		linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
-		url('./../img/cta/cta-bg.jpg'), $dark;
+		linear-gradient(0deg, rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.9)),
+		url('./../img/cta/cta-bg.jpg'), $white;
 
 }
 
@@ -29,14 +29,14 @@
     font-weight: 700;
     font-size: 36px;
     font-family: $font-accent;
-    color: $accent;
+    color: $dark;
 }
 
 .cta-paragraf {
     font-weight: 400;
     font-size: 16px;
     font-family: $font-main;
-    color: $white;
+    color: $dark;
 }
 
 .cta-form {
@@ -48,14 +48,16 @@
 .name {
     background:rgba(255, 255, 255, 0.212);
     transition: all 0.3s ease-in;
+    cursor: pointer;
+
 
     &:hover {
         border: 3px double rgba(255, 255, 255, 0.212);
         background:rgba(255, 255, 255, 0.13);
 
         &::placeholder {
-            opacity: 60%;
-            color: $white;
+            opacity: 90%;
+            color: $dark;
         }
     }
 }
@@ -63,6 +65,7 @@
 .phone {
     background:rgba(255, 255, 255, 0.212);
     transition: all 0.3s ease-in;
+    cursor: pointer;
     
 
     &:hover {
@@ -70,24 +73,24 @@
         background:rgba(255, 255, 255, 0.13);
 
         &::placeholder {
-            opacity: 60%;
-            color: $white;
+            opacity: 90%;
+            color: $dark;
         }
     }
 }
 
 .btn {
     color: $white;
-    background: $accent; 
+    background: $dark; 
     transition: all 0.2s ease-in;
 
      &:hover {
-        background: #d8bf63;
+        background: $dark-easy;
     }
 }
 
 .warning {
-    color: $white;
+    color: $dark;
     font-family: $font-main;
     text-align: center;
 }

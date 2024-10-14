@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 180px;
-    background: #2D343C;
+    background: #dbdbdb;
     min-height: 272px;
 }
 
@@ -23,12 +23,12 @@ ul {
 .item {
     font-family: $font-main;
     font-size: 14px;
-    color: $white;
+    color: $dark;
     letter-spacing: 0.05em;
     cursor: pointer;
     
     & a {
-        color: $accent;
+        color: $dark-easy;
     }
 }
 
@@ -36,7 +36,7 @@ ul {
     display: flex;
     gap: 20px;
 
-    .socthial {
+    .socthial-light {
         transition: all 0.5s ease-in-out;
         
         &:hover {
@@ -46,9 +46,9 @@ ul {
 }
 
 .socthial {
-    display: block;
+    display: none;
 }
 
 .socthial-light {
-    display: none;
+    display: block;
 }

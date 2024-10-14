@@ -10,11 +10,11 @@ a {
   transition: all 0.5s ease-in-out;
 }
 a:hover {
-  color: #b3a05f;
+  color: rgba(42, 49, 56, 0.862745098);
 }
 
 body {
-  background: #242b33;
+  background: #eeeeee;
 }
 
 .none {
@@ -38,11 +38,11 @@ html {
 }
 
 .logo-dark {
-  display: block;
+  display: none;
 }
 
 .logo-light {
-  display: none;
+  display: block;
 }
 
 /* Reset and base styles  */
@@ -139,7 +139,7 @@ legend {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./img/header/header-bg.jpg");
+  background: linear-gradient(180deg, #eeeeee 1.98%, rgba(255, 255, 255, 0.38) 60.04%, #eeeeee 100%), url("./img/header/header-bg.jpg");
   width: 100%;
   height: 100%;
   min-width: 840px;
@@ -202,6 +202,7 @@ legend {
 .nav-item {
   font-size: 14px;
   font-family: "Playfair Display", serif;
+  color: #242b33;
 }
 
 .header-content {
@@ -215,17 +216,18 @@ legend {
   font-weight: 700;
   font-size: 48px;
   font-family: "Playfair Display", serif;
-  color: #b3a05f;
+  color: #242b33;
   text-align: center;
   padding-bottom: 81px;
 }
 
 .header-scroll {
+  display: none;
   padding-bottom: 200px;
 }
 
 .header-scroll-light {
-  display: none;
+  padding-bottom: 200px;
 }
 
 .header-footer {
@@ -270,15 +272,15 @@ legend {
 .advantages-text {
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  color: #eeeeee;
+  color: #242b33;
 }
 
 .advantages-img {
-  display: block;
+  display: none;
 }
 
 .advantages-img-light {
-  display: none;
+  display: block;
 }
 
 .advantage {
@@ -296,7 +298,7 @@ legend {
   font-weight: 700;
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: #b3a05f;
+  color: #242b33;
   margin-bottom: 88px;
 }
 
@@ -319,7 +321,7 @@ legend {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  color: #eeeeee;
+  color: #242b33;
 }
 .card::before {
   content: "";
@@ -329,7 +331,7 @@ legend {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+  background: linear-gradient(180deg, rgba(222, 223, 224, 0) 0%, #eeeeee 100%);
 }
 .card::after {
   opacity: 0;
@@ -340,11 +342,11 @@ legend {
   top: 15px;
   right: 15px;
   bottom: 15px;
-  border: 3px double rgba(255, 255, 255, 0.4);
+  border: 3px double rgb(19, 19, 19);
   transition: opacity 0.2s ease-in;
 }
 .card:hover {
-  color: #eeeeee;
+  color: #242b33;
 }
 .card:hover::after {
   opacity: 1;
@@ -375,7 +377,7 @@ legend {
   justify-content: center;
   gap: 30px;
   padding: 180px 0;
-  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("./../img/cta/cta-bg.jpg"), #242b33;
+  background: linear-gradient(180deg, #eeeeee 10.42%, rgba(220, 220, 220, 0) 50.52%, #eeeeee 90.1%), linear-gradient(0deg, rgba(220, 220, 220, 0.9), rgba(220, 220, 220, 0.9)), url("./../img/cta/cta-bg.jpg"), #eeeeee;
 }
 
 .cta-text {
@@ -392,14 +394,14 @@ legend {
   font-weight: 700;
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: #b3a05f;
+  color: #242b33;
 }
 
 .cta-paragraf {
   font-weight: 400;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  color: #eeeeee;
+  color: #242b33;
 }
 
 .cta-form {
@@ -411,48 +413,50 @@ legend {
 .name {
   background: rgba(255, 255, 255, 0.212);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 .name:hover {
   border: 3px double rgba(255, 255, 255, 0.212);
   background: rgba(255, 255, 255, 0.13);
 }
 .name:hover::-moz-placeholder {
-  opacity: 60%;
-  color: #eeeeee;
+  opacity: 90%;
+  color: #242b33;
 }
 .name:hover::placeholder {
-  opacity: 60%;
-  color: #eeeeee;
+  opacity: 90%;
+  color: #242b33;
 }
 
 .phone {
   background: rgba(255, 255, 255, 0.212);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 .phone:hover {
   border: 3px double rgba(255, 255, 255, 0.212);
   background: rgba(255, 255, 255, 0.13);
 }
 .phone:hover::-moz-placeholder {
-  opacity: 60%;
-  color: #eeeeee;
+  opacity: 90%;
+  color: #242b33;
 }
 .phone:hover::placeholder {
-  opacity: 60%;
-  color: #eeeeee;
+  opacity: 90%;
+  color: #242b33;
 }
 
 .btn {
   color: #eeeeee;
-  background: #b3a05f;
+  background: #242b33;
   transition: all 0.2s ease-in;
 }
 .btn:hover {
-  background: #d8bf63;
+  background: rgba(42, 49, 56, 0.862745098);
 }
 
 .warning {
-  color: #eeeeee;
+  color: #242b33;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -463,19 +467,19 @@ legend {
   text-align: center;
 }
 
-.video-icon {
+.video-icon-light {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
 }
-.video-icon:hover {
+.video-icon-light:hover {
   transform: translate(-50%, -50%) scale(1.1);
-  filter: contrast(2);
+  filter: contrast(1.25);
 }
 
-.video-icon-light {
+.video-icon {
   display: none;
 }
 
@@ -492,11 +496,11 @@ legend {
   top: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(36, 43, 51, 0.8);
+  background: rgba(179, 178, 176, 0.7);
   transition: background-color 0.2s ease-in;
 }
 .video-link:hover::before {
-  background: rgba(36, 43, 51, 0.7);
+  background: rgba(179, 178, 176, 0.6);
 }
 
 .map-container {
@@ -510,13 +514,13 @@ legend {
   font-weight: 700;
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: #b3a05f;
+  color: #242b33;
   width: 1100px;
   margin-bottom: 88px;
 }
 
 .map-secthion {
-  background: #b3a05f;
+  background: #242b33;
   width: 1100px;
   height: 360px;
 }
@@ -537,7 +541,7 @@ legend {
   font-weight: 700;
   font-size: 36px;
   font-family: "Playfair Display", serif;
-  color: #b3a05f;
+  color: #242b33;
   width: 1160px;
 }
 
@@ -551,7 +555,7 @@ legend {
   justify-content: center;
   align-items: center;
   margin-top: 180px;
-  background: #2D343C;
+  background: #dbdbdb;
   min-height: 272px;
 }
 
@@ -571,29 +575,29 @@ ul {
 .item {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #eeeeee;
+  color: #242b33;
   letter-spacing: 0.05em;
   cursor: pointer;
 }
 .item a {
-  color: #b3a05f;
+  color: rgba(42, 49, 56, 0.862745098);
 }
 
 .socthials {
   display: flex;
   gap: 20px;
 }
-.socthials .socthial {
+.socthials .socthial-light {
   transition: all 0.5s ease-in-out;
 }
-.socthials .socthial:hover {
+.socthials .socthial-light:hover {
   transform: scale(1.1);
 }
 
 .socthial {
-  display: block;
+  display: none;
 }
 
 .socthial-light {
-  display: none;
-}/*# sourceMappingURL=main.css.map */
+  display: block;
+}/*# sourceMappingURL=mainLight.css.map */

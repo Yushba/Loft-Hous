@@ -1,6 +1,7 @@
 $white: #eeeeee;
 $accent:#b3a05f;
 $dark:#242b33;
+$dark-easy:#2a3138dc;
 
 $font-main: 'Raleway', sans-serif;
 $font-accent: 'Playfair Display', serif;
@@ -16,12 +17,12 @@ a {
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        color: $accent;
+        color: $dark-easy;
     }
 }
 
 body {
-    background: $dark;
+    background: $white;
 }
 
 .none {
@@ -56,9 +57,9 @@ html {
 }
 
 .logo-dark {
-    display: block;
+    display: none;
 }
 
 .logo-light {
-    display: none;
+    display: block;
 }

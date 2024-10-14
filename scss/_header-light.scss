@@ -4,9 +4,9 @@
     flex-direction: column;
   background: linear-gradient(
       180deg,
-      #242b33 11.98%,
-      rgba(45, 52, 60, 0.38) 51.04%,
-      #242b33 92.19%
+      $white 1.98%,
+      rgba(255, 255, 255, 0.38) 60.04%,
+      $white 100%
     ),
     url('./img/header/header-bg.jpg');
     width: 100%;
@@ -71,6 +71,7 @@
 .nav-item {
     font-size: 14px;
     font-family: $font-accent;
+    color: $dark;
 }
   
 .header-content {
@@ -84,17 +85,18 @@
     font-weight: 700;
     font-size: 48px;
     font-family: $font-accent;
-    color: $accent;
+    color: $dark;
     text-align: center;
     padding-bottom: 81px;
 }
 
 .header-scroll {
+    display: none;
     padding-bottom: 200px;
 }
 
 .header-scroll-light {
-    display: none;
+    padding-bottom: 200px;
 }
 
 .header-footer {
